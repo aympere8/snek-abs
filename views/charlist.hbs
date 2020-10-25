@@ -1,0 +1,23 @@
+<div id='header'> <span id="headtxt"> CHARACTERS</span></div>
+
+<div id="charlist">
+    
+
+{{# each chardatset}}
+<center>
+<div  id = "char-sm-card">
+    <center>
+    <img id="profileimg"src="{{this.url}}" alt="{{this.code}} profile">
+    
+    <form name="charform" action="/charprofile" method="post">
+        <input type="hidden" name="code" value="{{this.code}}">
+        <input id="buttonlink" type="submit" value="{{this.code}}">
+        
+    </form>
+    </center>
+</div>
+</center>
+{{/ each}}
+
+    
+</div>

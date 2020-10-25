@@ -1,0 +1,6 @@
+//char profile display
+//comission page display
+//admin redir to itself
+/form values checking
+css styling
+

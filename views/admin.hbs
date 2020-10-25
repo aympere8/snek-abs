@@ -1,0 +1,112 @@
+
+{{#if message}}
+<center><h3>{{message}}</h3></center>
+{{/if}}
+    
+    <div id= "deleter" >
+        
+        <h1 style="align:left;" id="gallhdr">Delete character</h1>
+
+        <center>
+    
+        <form action="/remove" method="post">
+        <input id="iput" type="text" name="ch_code" id="delfeild">
+        <input style="width:70px;" id="adbuttons" type="submit" value="Delete">
+        </form>
+        </center>
+    </div>
+    
+    
+    <center><hr id="adhr"></center>
+
+    <div id="adderparent">
+            <h1 id="gallhdr">Add Character details</h1>
+
+        <form action="/add" method="post" enctype="multipart/form-data">
+        <center>
+        <div id="adder">
+        
+        <label for="chcodea">Character code</label>
+        <input id="iput" type="text" name="ch_code" id="chcodea">
+
+        <label for="chname">Name</label>
+        <input id="iput" type="text" name="ch_name" id="chname">
+
+        <label for="chage">Age</label>
+        <input id="iput" type="number" min="0" name="ch_age" id="chage">
+
+        <label for="chgender">Gender</label>
+        <input id="iput" type="text" name="ch_gender" id="chgender">
+
+        <label for="chweight">Weight</label>
+        <input id="iput" type="number" min="0" name="ch_weight" id="chweight">
+        
+        <label for="chheight">Height</label>
+        <input id="iput" type="number" min="0" name="ch_height" id="chheight">
+
+        </div>
+        </center>
+
+
+        <center>
+        <div id="imgupload">
+            <center>
+            <label id="fiplabel"> 
+                
+                <div id="upgrd">
+                    <span id="fiphead">Profile picture</span>  
+                    <img id="fipimg" src="images/up.svg" alt="upload">
+                </div> 
+            <input id="fip" type="file" name="ch_profile" >
+            </label>
+            </center>
+            
+            <center>
+            <label id="fiplabel" >
+                <div id="upgrd">
+                    <span id="fiphead">Stat sheet</span> 
+                    <img id="fipimg" src="images/up.svg" alt="upload">
+                </div> 
+            <input type="file" name="ch_stats" id="fip">
+            
+            </label>
+            </center>      
+        </div>
+        </center>
+        <br>
+        <center>
+        <textarea id="iput" name="backstory" id="backstory" ></textarea>
+        <br>
+        <input style="width:60px;" id="adbuttons" type="submit" value="Add">
+        
+        </center>
+        </form>
+    </div>
+
+</div>
+
+<center>
+            <hr id="adhr">
+</center>
+<div id="gallader">
+
+    <h1 id="gallhdr">Add image to character gallery</h1>
+    <center>
+    <form id="gallgrid" action="/gallad" method="post" enctype="multipart/form-data" >
+      
+      
+      <div>
+         <label for="chcodegal"> Character code</label>
+       <input id="iput" type="text" name="ch_code" id="chcodegal">
+        
+        </div>
+        <br>
+        
+        <center><label id="fiplabel"><img id="fipimg" src="images/up.svg" alt="upload"><input id="fip" type="file" name="gup" id="gup"></label></center>
+        <br>
+        <input style="width:130px;" id="adbuttons" type="submit" value="Add to gallery">
+        
+    </form>
+    </center>
+</div>
+

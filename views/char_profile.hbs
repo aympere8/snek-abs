@@ -1,0 +1,78 @@
+<div id="backblur">
+
+
+<center>
+    
+<div id="contner">
+
+    <center>
+    <div id="attrbs">
+        
+
+            <span id="attel">Name</span><span id="attel">{{res.char_name}}</span>
+            <span id="attel">Age</span><span id="attel">{{res.char_age}}</span>
+            <span id="attel">Gender</span><span id="attel">{{res.char_gender}}</span>
+            <span id="attel">Height</span><span id="attel">{{res.char_height}}</span>
+            <span id="attel">weight</span><span id="attel">{{res.char_weight}}</span>
+        {{!-- <table id="catable">
+            <tr>
+                <td>Name</td>
+                <td>{{res.char_name}}</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>{{res.char_age}}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>{{res.char_gender}}</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>{{res.char_height}}</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>{{res.char_weight}}</td>
+            </tr>
+            
+        </table> --}}
+       
+    </div>
+    </center>
+    <div id="dpcontainer">
+        <center>
+            <img id="profpic" src="{{profurl}}" alt="profile_pic">
+        </center>
+    </div>
+</div>
+</center>
+
+<center>
+    <hr id="cdbar">
+    <h1>Backstory</h1>
+    <div id="backstory-box">
+        <p>{{res.ch_backstory}}</p>
+    </div>
+    
+<hr id="cdbar">
+
+<h1>Gallery</h1>
+
+
+
+
+    <div id="gallerygrid">
+
+        
+
+        
+        {{# each gallarray}}
+
+        <a href="{{this}}"><img id="gallimg" src="{{this}}" alt="gallery image"></a>
+        {{/ each}}
+
+    </div>
+</center>
+</div>
+
