@@ -269,9 +269,10 @@ a:visited
 
 #contner
 {
+    margin: 0px;
     
     width: 80vw;
-    padding: 5vh;
+    padding: 3vw;
     display: grid;
     grid-template-columns:auto auto ;
 }
@@ -308,6 +309,14 @@ p{
     margin-top: 20%;
     margin-bottom: 20%;
     column-gap: 2vw;
+
+}
+
+#stat{
+    height: 30vh;
+    width:auto;
+    box-shadow: -5px -5px 4px rgba(107, 107, 107, 0.29), 5px 5px 4px rgba(11, 11, 11, 0.28);
+    border-radius: 10px;
 
 }
 

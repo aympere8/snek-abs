@@ -72,6 +72,8 @@ router.post('/charprofile', async (rq,rs)=>{
 
        var prof = await cld.api.resource(code);
        var profurl = await prof.url;
+        var stats = await cld.api.resource(`stats/${code}`);
+        var sturl=stats.url;
         var gallery = await (await cld.api.resources_by_tag(code)).resources;
        gallery.forEach(doc=>{
            gallarray.push(doc.url);
@@ -83,11 +85,9 @@ router.post('/charprofile', async (rq,rs)=>{
     {
         console.log(err);
     }
-
-    console.log(gallarray);
      
     
-    rs.render('char_profile', {res,profurl, gallarray});
+    rs.render('char_profile', {res,sturl,profurl,gallarray});
     
 })
 
